@@ -21,6 +21,7 @@ import java.util.Scanner;
         public static void main (String [] args)
         {
         
+        
             //constant variables.  static values.  Do not edit or reassign.
             //given from hw and lab assignments
             double wheelDiameter = 27.0;  //wheel diameter in inches
@@ -56,8 +57,9 @@ import java.util.Scanner;
             speed = speed * secondsPerMin * minPerHr; //coverts speed from mi/sec to mph
             
             //print calculations
-            System.out.println ("The distance traveled during this period was " + distanceTrip + " miles and took " + (nSeconds/secondsPerMin) + " minutes.");
+            System.out.println ("The distance traveled during this period was " + distanceTrip + " miles and it took " + (nSeconds/secondsPerMin) + " minutes.");
             System.out.println ("The average speed during this period was " + speed + " mph.");
+            
             
         //end 
         }
