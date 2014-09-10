@@ -1,7 +1,7 @@
 //Safiya Nieves
 //09.16.2014
-//CSE HW 03
-//Program 1. Bycycle
+//CSE2 HW 03
+//Program 1. Bicycle.java
 
 //PURPOSE
 //  Given user input, print the distance, speed, and time traveled
@@ -43,10 +43,10 @@ import java.util.Scanner;
             //request information from user
             //values for variables are required before computation can occur
             System.out.print ("Enter the number of seconds traveled during your recorded trip:"); //request time traveled during record period
-            nSeconds = userInput.nextDouble();
+            nSeconds = userInput.nextDouble(); //accept input
             
             System.out.print ("Enter the count of tire rotations during your recorded trip:"); //request number of tire rotations.  required to determine distance
-            nCounts = userInput.nextDouble();
+            nCounts = userInput.nextDouble(); //accept input
             
             //calculations
             distanceTrip = wheelDiameter*PI*nCounts; // distance in inches. obtained by circumference*# of full wheel rotations. 
