@@ -3,7 +3,7 @@
 //CSE2 HW 05
 //Program 1. Burger King
 
-//PURPOSE: given a course number determine the semester and year of the course
+//PURPOSE: Given user input . Print a statement describing the customer's order.
 
 //import Scanner class
 import java.util.Scanner;
