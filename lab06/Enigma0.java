@@ -22,12 +22,10 @@ public class Enigma0{
       System.out.println("You entered "+n);
     }
     
-    switch(k+p+q+r){
-      case 24: 
-      case 25: System.out.println("sum is 25");
-      default:
-        System.out.println("To repeat, you entered "+n);
-    }
+
+      System.out.println("sum is 25");
+      System.out.println("To repeat, you entered "+n);
+
   }
 }
 
@@ -44,12 +42,17 @@ public class Enigma0{
             Variable n was declared but not initialized in outer scope
             Initialization in inner scope does not provide initialization in outer scope
             
+        Logic Error
+            Switch statement is unecessary.  
+            
         Correction
             Moved variable declaration to higher line
             This allowed me to assigned dummy value of n=0.
-            removed declaration from if/else statements
+            removed declaration from if/else statement
             After if/else n will be assigned an actual value.
             This will print the int entered by the user
+            
+            Removed switch statement 
             
 
 
