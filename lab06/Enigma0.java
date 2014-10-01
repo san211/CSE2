@@ -47,12 +47,11 @@ public class Enigma0{
         Correction
             Moved variable declaration to higher line
             This allowed me to assigned dummy value of n=0.
+            removed declaration from if/else statements
             After if/else n will be assigned an actual value.
             This will print the int entered by the user
             
-            
-            
-        Correction: 
+
 
  */
 
