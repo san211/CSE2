@@ -20,27 +20,36 @@
             int spin = 0;
             int bet = 0;
             
+            //intialize variables
             //counters
             int i=0;
             int j=0;
             
+            //for each 100 spins counters for number of spins won and lost
+            //reset after 100 spins
             int win = 0;
             int lose = 0;           
             
+            //counts if 100 spin session was profitable
+            //does not reset
             int trialWin=0;
             int trialFail=0;
             int trialOther=0;
             
+            //count totals losses and wins for all spins
+            //does not reset
             int winCount=0;
             int lossCount=0;
         
+            //1000 trials
             while (j<1000)
             {   
                 win=0;
                 lose=0;
                 i=0;
-                bet = (int)((Math.random()*10000))%38;
+                bet = (int)((Math.random()*10000))%38; //random bet
                 
+                //100 spins
                 while (i<100)
                 {
                     spin = (int)((Math.random()*10000))%38;
