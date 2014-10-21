@@ -142,7 +142,7 @@ import java.util.Scanner;
                                 j--;
                                 System.out.print(" "); 
                             }
-                            while (j > 0);
+                            while (j > -1);
                                                     
                             k=0;
                             do
@@ -167,7 +167,7 @@ import java.util.Scanner;
                             System.out.print(" ");
                             j--;
                         }
-                        while (j > 0);
+                        while (j > -1);
                         
                         k=0;
                         do
