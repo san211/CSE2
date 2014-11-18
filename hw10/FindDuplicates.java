@@ -105,7 +105,7 @@ public class FindDuplicates
     }
     
     if (dup == 1)
-    {return true;}
+    {return true;}//if dup = 1 then exactly one dup
     else
     {return false;}
   }
