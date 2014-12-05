@@ -166,36 +166,26 @@ public static void displayHand(int[] rankFreq2, int[] hand)
     int rankType[] = new int [5];
     int rankDiff[] = new int [4];
     
-    String face[]={"A ","K ","Q ","J ","10 ","9 ","8 ","7 ","6 ","5 ","4 ","3 ","2 "};
     
-    System.out.println("suit");
+    
     for(i=0; i<5; i++)
     {suitType[i]=(int)(hand[i]/13);}
     
-    for(i=0; i<4; i++)
-    {
-      if(suitType[i]==suitType[i+1])    
-      {flush = true;}
-      else
-      {flush = false; break;}
+    if(suitType[1] == suitType [2] & suitType[0] == suitType [1] & suitType[1] == suitType [3] & suitType[1] == suitType[4])    
+    {flush = true;}
       
-    }
-    
-    System.out.println("rank");
     for(i=0; i<5; i++)
     {rankType[i] = hand[i]%13;}
     
-    System.out.println("diff");
-    for(i=0; i<4; i++)
-    {rankDiff[i] = hand[i+1]-hand[i];}
+    handSort(rankType);
     
-    for(i=0; i<3; i++)
-    {
-      if(rankDiff[i]==rankDiff[i+1])
-      {straight=true;}
-      else
-      {straight=false;}
-    }
+    for(i=0; i<4; i++)
+    {rankDiff[i] = rankType[i+1]-rankType[i];}
+    
+    if(rankDiff[0] ==1 & rankDiff[1] == 1 & rankDiff [2] == 1 & rankDiff [3] ==1)
+    {straight=true;}
+
+
     
     for (i=0; i<5; i++)
     {
@@ -213,13 +203,12 @@ public static void displayHand(int[] rankFreq2, int[] hand)
         {x+=",";}
     }
     
-    /*  
-    if(flush=true) 
+    if(flush==true) 
     {  
       if (x.equals("0,1,2,3,4"))
       {System.out.println("This is a Royal Flush\n");}
       
-      else if(straight == true & flush == true)
+      else if(straight & flush)
       {System.out.println("This is a Straight Flush\n");}
       
       else if(x.equals("0,9,10,11,12"))
@@ -232,13 +221,12 @@ public static void displayHand(int[] rankFreq2, int[] hand)
     else if (x.equals("0,9,10,11,12"))
     {System.out.println("This is a Straight\n");}
     
-    else if (straight==true & flush==false)
+    else if (straight & !flush)
     {System.out.println("This is a Straight\n");}
     
     
-    //can't figure out flush or straight.  this is causing errors in outcomes.
     else
-    {*/
+    {
     
       switch(q)
       {
@@ -250,7 +238,7 @@ public static void displayHand(int[] rankFreq2, int[] hand)
         case "8,5,0,0,0": System.out.println("This is High Card ");
         default: break;
       }
-    //}
+    }
     
     
     
