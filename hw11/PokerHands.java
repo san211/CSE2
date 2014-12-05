@@ -170,7 +170,7 @@ public static void displayHand(int[] rankFreq2, int[] hand)
     
     System.out.println("suit");
     for(i=0; i<5; i++)
-    {suitType[i]=(int)(hand[i]/13);System.out.print(suitType[i]);}
+    {suitType[i]=(int)(hand[i]/13);}
     
     for(i=0; i<4; i++)
     {
@@ -179,16 +179,15 @@ public static void displayHand(int[] rankFreq2, int[] hand)
       else
       {flush = false; break;}
       
-      System.out.println("flush" + flush);
     }
     
     System.out.println("rank");
     for(i=0; i<5; i++)
-    {rankType[i] = hand[i]%13; System.out.print(rankType[i]);}
+    {rankType[i] = hand[i]%13;}
     
     System.out.println("diff");
     for(i=0; i<4; i++)
-    {rankDiff[i] = hand[i+1]-hand[i]; System.out.print(rankDiff[i]);}
+    {rankDiff[i] = hand[i+1]-hand[i];}
     
     for(i=0; i<3; i++)
     {
@@ -214,8 +213,6 @@ public static void displayHand(int[] rankFreq2, int[] hand)
         {x+=",";}
     }
     
-    System.out.print(x);
-    
     /*  
     if(flush=true) 
     {  
@@ -239,7 +236,7 @@ public static void displayHand(int[] rankFreq2, int[] hand)
     {System.out.println("This is a Straight\n");}
     
     
-    
+    //can't figure out flush or straight.  this is causing errors in outcomes.
     else
     {*/
     
