@@ -108,6 +108,7 @@ public class MatrixSorter{
     
     int min1 = 0;
     int min2 = 0;
+    int [] dummy = new int [10];
     int index = 0;
   
     for(j=0; j<7; j++)      
@@ -138,7 +139,7 @@ public class MatrixSorter{
     
       for (m = j-1; m >= 0 && array[m][0] > min2; m--) 
       {
-        array[m+1] = array[m];
+        array[m+1][0] = array[m][0];
       }
 
       array[m+1][0] = min2;
